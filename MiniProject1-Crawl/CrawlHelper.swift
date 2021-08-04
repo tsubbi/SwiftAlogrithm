@@ -21,18 +21,6 @@ func getContentOfDirectory(at url: String) {
     do {
         let items = try fileManager.contentsOfDirectory(atPath: url)
         for item in items {
-//            print("Found Item:", item)
-//            if let isDirectory = isFileDirectory(atPath: url, name: item) {
-//                if isDirectory {
-//                    getContentOfDirectory(at: url+item)
-//                } else {
-//                    if item == items.last {
-//                        print(FileHeaders.lastFileHeader.rawValue+item)
-//                    } else {
-//                        print(FileHeaders.fileContentHeader.rawValue+item)
-//                    }
-//                }
-//            }
             let model = isFileDirectory(atPath: url, name: item)
             if model.isExist && model.isDirectory {
                 getContentOfDirectory(at: url+"/\(item)")
