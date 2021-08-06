@@ -25,11 +25,10 @@ func quickSort<T: Comparable>(_ arr: inout [T], _ start: Int, _ end: Int) {
     if start < end {
         // there is bug in there that I haven't yet find the bug
         let partitionIndex = partition(&arr, start, end)
+        // 
         quickSort(&arr, start, partitionIndex-1)
         quickSort(&arr, partitionIndex+1, end)
     }
-    
-    print(arr)
 }
 
 /// Returns the index of the pivot
@@ -46,14 +45,15 @@ func partition<T: Comparable>(_ arr: inout [T], _ start: Int, _ end: Int) -> Int
     // partition+1 ... i-1 is all values > pivot
     // i ... end-1 are values hasn't checked yet
     // arr[end] is the reference point
-    for i in start...end {
+    // the bug goes in here that it has to be start..<end not start...end
+    for i in start..<end {
         if arr[i] <= pivot {
-            // swap the values
+            // swap the values with pivoted number
             (arr[partitionIndex], arr[i]) = (arr[i], arr[partitionIndex])
             partitionIndex += 1
         }
     }
-    // swap the pivot with last because it is equal or less than the last
+    // swap the pivot with last so the pivit location is changing each time
     (arr[partitionIndex], arr[end]) = (arr[end], arr[partitionIndex])
     print("end find partition index")
     return partitionIndex
