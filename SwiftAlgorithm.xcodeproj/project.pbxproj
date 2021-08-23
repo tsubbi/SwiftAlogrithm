@@ -20,6 +20,12 @@
 		A15857DA26BBEEB000BA8D3E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15857D726BBEEB000BA8D3E /* Stack.swift */; };
 		A15857DB26BBEEB000BA8D3E /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15857D826BBEEB000BA8D3E /* Bag.swift */; };
 		A15857E226BBEEF800BA8D3E /* ExhaustiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15857E126BBEEF800BA8D3E /* ExhaustiveSearch.swift */; };
+		A158580A26C3B79B00BA8D3E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A158580926C3B79B00BA8D3E /* main.swift */; };
+		A1B7F9A526D3B070004B7732 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7F9A426D3B070004B7732 /* main.swift */; };
+		A1B7F9B126D3B09C004B7732 /* CyclicPermutaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7F9B026D3B09C004B7732 /* CyclicPermutaion.swift */; };
+		A1B7F9C126D3B175004B7732 /* FindJudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7F9C026D3B175004B7732 /* FindJudge.swift */; };
+		A1B7F9CA26D3CABF004B7732 /* NumberOfProvinces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7F9C926D3CABF004B7732 /* NumberOfProvinces.swift */; };
+		A1B7F9D326D3D9E3004B7732 /* FindCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7F9D226D3D9E3004B7732 /* FindCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +74,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A158580526C3B79B00BA8D3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A1B7F9A026D3B070004B7732 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +113,14 @@
 		A15857D726BBEEB000BA8D3E /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		A15857D826BBEEB000BA8D3E /* Bag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 		A15857E126BBEEF800BA8D3E /* ExhaustiveSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExhaustiveSearch.swift; sourceTree = "<group>"; };
+		A158580726C3B79B00BA8D3E /* Graph */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Graph; sourceTree = BUILT_PRODUCTS_DIR; };
+		A158580926C3B79B00BA8D3E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A1B7F9A226D3B070004B7732 /* CyclicPermutation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CyclicPermutation; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B7F9A426D3B070004B7732 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A1B7F9B026D3B09C004B7732 /* CyclicPermutaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicPermutaion.swift; sourceTree = "<group>"; };
+		A1B7F9C026D3B175004B7732 /* FindJudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindJudge.swift; sourceTree = "<group>"; };
+		A1B7F9C926D3CABF004B7732 /* NumberOfProvinces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfProvinces.swift; sourceTree = "<group>"; };
+		A1B7F9D226D3D9E3004B7732 /* FindCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +159,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A158580426C3B79B00BA8D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B7F99F26D3B070004B7732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,6 +184,8 @@
 				A158573126B4105600BA8D3E /* MiniProject1-Crawl */,
 				A15857AF26BADC8600BA8D3E /* QuickSort */,
 				A15857C426BBEE6E00BA8D3E /* DataStructure */,
+				A158580826C3B79B00BA8D3E /* Graph */,
+				A1B7F9A326D3B070004B7732 /* CyclicPermutation */,
 				A158571126B197FA00BA8D3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +198,8 @@
 				A158573026B4105600BA8D3E /* MiniProject1-Crawl */,
 				A15857AE26BADC8600BA8D3E /* QuickSort */,
 				A15857C326BBEE6D00BA8D3E /* DataStructure */,
+				A158580726C3B79B00BA8D3E /* Graph */,
+				A1B7F9A226D3B070004B7732 /* CyclicPermutation */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +250,26 @@
 				A15857C526BBEE6E00BA8D3E /* main.swift */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		A158580826C3B79B00BA8D3E /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				A158580926C3B79B00BA8D3E /* main.swift */,
+				A1B7F9C026D3B175004B7732 /* FindJudge.swift */,
+				A1B7F9C926D3CABF004B7732 /* NumberOfProvinces.swift */,
+				A1B7F9D226D3D9E3004B7732 /* FindCenter.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		A1B7F9A326D3B070004B7732 /* CyclicPermutation */ = {
+			isa = PBXGroup;
+			children = (
+				A1B7F9A426D3B070004B7732 /* main.swift */,
+				A1B7F9B026D3B09C004B7732 /* CyclicPermutaion.swift */,
+			);
+			path = CyclicPermutation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +360,40 @@
 			productReference = A15857C326BBEE6D00BA8D3E /* DataStructure */;
 			productType = "com.apple.product-type.tool";
 		};
+		A158580626C3B79B00BA8D3E /* Graph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A158580B26C3B79C00BA8D3E /* Build configuration list for PBXNativeTarget "Graph" */;
+			buildPhases = (
+				A158580326C3B79B00BA8D3E /* Sources */,
+				A158580426C3B79B00BA8D3E /* Frameworks */,
+				A158580526C3B79B00BA8D3E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graph;
+			productName = Graph;
+			productReference = A158580726C3B79B00BA8D3E /* Graph */;
+			productType = "com.apple.product-type.tool";
+		};
+		A1B7F9A126D3B070004B7732 /* CyclicPermutation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B7F9A826D3B070004B7732 /* Build configuration list for PBXNativeTarget "CyclicPermutation" */;
+			buildPhases = (
+				A1B7F99E26D3B070004B7732 /* Sources */,
+				A1B7F99F26D3B070004B7732 /* Frameworks */,
+				A1B7F9A026D3B070004B7732 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CyclicPermutation;
+			productName = CyclicPermutation;
+			productReference = A1B7F9A226D3B070004B7732 /* CyclicPermutation */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -314,6 +418,12 @@
 					A15857C226BBEE6D00BA8D3E = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					A158580626C3B79B00BA8D3E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A1B7F9A126D3B070004B7732 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = A158570B26B197FA00BA8D3E /* Build configuration list for PBXProject "SwiftAlgorithm" */;
@@ -334,6 +444,8 @@
 				A158572F26B4105600BA8D3E /* MiniProject1-Crawl */,
 				A15857AD26BADC8600BA8D3E /* QuickSort */,
 				A15857C226BBEE6D00BA8D3E /* DataStructure */,
+				A158580626C3B79B00BA8D3E /* Graph */,
+				A1B7F9A126D3B070004B7732 /* CyclicPermutation */,
 			);
 		};
 /* End PBXProject section */
@@ -384,6 +496,26 @@
 				A15857DA26BBEEB000BA8D3E /* Stack.swift in Sources */,
 				A15857DB26BBEEB000BA8D3E /* Bag.swift in Sources */,
 				A15857D926BBEEB000BA8D3E /* Queue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A158580326C3B79B00BA8D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B7F9C126D3B175004B7732 /* FindJudge.swift in Sources */,
+				A1B7F9D326D3D9E3004B7732 /* FindCenter.swift in Sources */,
+				A1B7F9CA26D3CABF004B7732 /* NumberOfProvinces.swift in Sources */,
+				A158580A26C3B79B00BA8D3E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B7F99E26D3B070004B7732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B7F9B126D3B09C004B7732 /* CyclicPermutaion.swift in Sources */,
+				A1B7F9A526D3B070004B7732 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +727,42 @@
 			};
 			name = Release;
 		};
+		A158580C26C3B79C00BA8D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A158580D26C3B79C00BA8D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1B7F9A626D3B070004B7732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1B7F9A726D3B070004B7732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -648,6 +816,24 @@
 			buildConfigurations = (
 				A15857C826BBEE6E00BA8D3E /* Debug */,
 				A15857C926BBEE6E00BA8D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A158580B26C3B79C00BA8D3E /* Build configuration list for PBXNativeTarget "Graph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A158580C26C3B79C00BA8D3E /* Debug */,
+				A158580D26C3B79C00BA8D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B7F9A826D3B070004B7732 /* Build configuration list for PBXNativeTarget "CyclicPermutation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B7F9A626D3B070004B7732 /* Debug */,
+				A1B7F9A726D3B070004B7732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

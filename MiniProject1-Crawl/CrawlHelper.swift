@@ -7,12 +7,12 @@
 
 import Foundation
 
-func isFileDirectory(atPath path: String, name: String) -> FileModel {
+func isFileDirectory(atPath path: String, name: String) -> FileModel? {
     let fileManager = FileManager.default
     
     var isDir: ObjCBool = false
     
-    return FileModel(path: path, name: name, isExist: fileManager.fileExists(atPath: path+"/\(name)", isDirectory: &isDir), isDirectory: isDir.boolValue)
+    return fileManager.fileExists(atPath: path+"/\(name)", isDirectory: &isDir) ? FileModel(path: path, name: name, isDirectory: isDir.boolValue) : nil
 }
 
 func getContentOfDirectory(at url: String) {
@@ -20,15 +20,18 @@ func getContentOfDirectory(at url: String) {
     
     do {
         let items = try fileManager.contentsOfDirectory(atPath: url)
-        for item in items {
-            let model = isFileDirectory(atPath: url, name: item)
-            if model.isExist && model.isDirectory {
-                getContentOfDirectory(at: url+"/\(item)")
-            } else if model.isExist && !model.isDirectory {
-                if item == items.last {
-                    print("│ \(FileHeaders.lastFileHeader.rawValue+item)")
+        items.forEach {
+            guard let model = isFileDirectory(atPath: url, name: $0) else {
+                print("File does not exist")
+                return
+            }
+            if model.isDirectory {
+                getContentOfDirectory(at: url+"/\($0)")
+            } else {
+                if $0 == items.last {
+                    print("│ \(FileHeaders.lastFileHeader.rawValue+$0)")
                 } else {
-                    print(FileHeaders.fileContentHeader.rawValue+item)
+                    print(FileHeaders.fileContentHeader.rawValue+$0)
                 }
             }
         }
@@ -45,6 +48,5 @@ enum FileHeaders: String {
 struct FileModel {
     let path: String
     let name: String
-    let isExist: Bool
     let isDirectory: Bool
 }
