@@ -25,6 +25,8 @@ func leastIntervval(_ tasks: [Character], _ n: Int) -> Int {
     let numberOfMax = dict.values.filter {
         $0 == maxValue
     }.count
-    
+    // (maxValue-1)*(n+1)+numberOfMax
+    // the most appeared value-1(the length of block) times n+1 (the number of blocks should appear) and then plus the number of character that represent to end length
+    // https://medium.com/@swgarciab/task-scheduler-leetcode-problem-a74acadf0e22
     return max(tasks.count, (maxValue-1)*(n+1)+numberOfMax)
 }
