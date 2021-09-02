@@ -9,22 +9,39 @@ import Foundation
 
 print("Hello, World!")
 
-var pipes: [Pipe] = []
-
-func read() -> (totalBuildings: Int, totalPipes: Int, totalDistance: Int, pipes: [Pipe]) {
+func read() -> (totalBuildings: Int, totalPipes: Int, enhensor: Int, pipes: [Pipe]) {
     let line = readLine()!.split(separator: " ")
     let totalBuildings = Int(line[0])!
     let totalPipes = Int(line[1])!
-    let d = Int(line[2])!
+    let enhensor = Int(line[2])!
     var pipes: [Pipe] = []
     
-    for i in 1...totalBuildings {
+    for i in 1...totalPipes {
         let pipePlan = readLine()!.split(separator: " ")
         let connectTo = Int(pipePlan[1])!
         let distance = Int(pipePlan[2])!
         
-        pipes.append(Pipe(current: i, next: connectTo, distance: distance, isActive: i < totalPipes))
+        pipes.append(Pipe(current: i, next: connectTo, distance: distance, isActive: i < totalBuildings-1))
     }
     
-    return (totalBuildings, totalPipes, d, pipes)
+    return (totalBuildings, totalPipes, enhensor, pipes)
+}
+
+func solve() {
+    let plans = read()
+    let sortedPipes = plans.pipes.sorted(by: <)
+    var days = 0
+    var unifind = UnionFind(size: plans.totalBuildings)
+    
+    for pipe in sortedPipes {
+        if !unifind.isSameRoot(lhs: pipe.current, rhs: pipe.next) {
+            unifind.union(group: pipe.current, to: pipe.next)
+            
+            if !pipe.isActive {
+                days += 1
+            }
+        }
+    }
+    
+    print(days)
 }

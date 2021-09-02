@@ -14,8 +14,14 @@ struct Pipe {
     var isActive: Bool
 }
 
+extension Pipe: Comparable {
+    static func < (lhs: Pipe, rhs: Pipe) -> Bool {
+        return lhs.distance < rhs.distance
+    }
+}
+
 // https://www.youtube.com/watch?v=JZBQLXgSGfs
-struct KruskalUnionFind {
+struct UnionFind {
     private var size: [Int]
     private var id: [Int]
     
@@ -33,8 +39,8 @@ struct KruskalUnionFind {
         return index
     }
     
-    mutating func isSameRoot(lhs: Pipe, rhs: Pipe) -> Bool {
-        return self.findRoot(lhs.current) == self.findRoot(rhs.current)
+    mutating func isSameRoot(lhs: Int, rhs: Int) -> Bool {
+        return self.findRoot(lhs) == self.findRoot(rhs)
     }
     
     mutating func union(group node1: Int, to node2: Int) {
