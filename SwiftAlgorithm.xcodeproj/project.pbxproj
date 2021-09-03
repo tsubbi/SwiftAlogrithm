@@ -34,6 +34,10 @@
 		A1B7FA2D26D930E3004B7732 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA2C26D930E3004B7732 /* TaskScheduler.swift */; };
 		A1B7FA4126DF2716004B7732 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA4026DF2716004B7732 /* main.swift */; };
 		A1B7FA5C26DF2792004B7732 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA5B26DF2792004B7732 /* Pipe.swift */; };
+		A1B7FA7826E15FD7004B7732 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA7726E15FD7004B7732 /* main.swift */; };
+		A1B7FA8826E16347004B7732 /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA8726E16347004B7732 /* NetworkDelayTime.swift */; };
+		A1B7FA9526E21AB0004B7732 /* CheapestFlightsWithinKStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA9426E21AB0004B7732 /* CheapestFlightsWithinKStops.swift */; };
+		A1B7FAA226E22F7B004B7732 /* PathWithMinimumEffort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FAA126E22F7B004B7732 /* PathWithMinimumEffort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,6 +131,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A1B7FA7326E15FD6004B7732 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -167,6 +180,11 @@
 		A1B7FA3E26DF2716004B7732 /* MinimumCostFlow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MinimumCostFlow; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B7FA4026DF2716004B7732 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A1B7FA5B26DF2792004B7732 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		A1B7FA7526E15FD6004B7732 /* ShortestPath */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShortestPath; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B7FA7726E15FD7004B7732 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A1B7FA8726E16347004B7732 /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
+		A1B7FA9426E21AB0004B7732 /* CheapestFlightsWithinKStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlightsWithinKStops.swift; sourceTree = "<group>"; };
+		A1B7FAA126E22F7B004B7732 /* PathWithMinimumEffort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathWithMinimumEffort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +258,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1B7FA7226E15FD6004B7732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -256,6 +281,7 @@
 				A1B7F9EA26D6A0F6004B7732 /* TreeBasic */,
 				A1B7FA0726D92171004B7732 /* GreedyAlgorithm */,
 				A1B7FA3F26DF2716004B7732 /* MinimumCostFlow */,
+				A1B7FA7626E15FD7004B7732 /* ShortestPath */,
 				A158571126B197FA00BA8D3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -273,6 +299,7 @@
 				A1B7F9E926D6A0F6004B7732 /* TreeBasic */,
 				A1B7FA0626D92171004B7732 /* GreedyAlgorithm */,
 				A1B7FA3E26DF2716004B7732 /* MinimumCostFlow */,
+				A1B7FA7526E15FD6004B7732 /* ShortestPath */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,6 +399,17 @@
 				A1B7FA5B26DF2792004B7732 /* Pipe.swift */,
 			);
 			path = MinimumCostFlow;
+			sourceTree = "<group>";
+		};
+		A1B7FA7626E15FD7004B7732 /* ShortestPath */ = {
+			isa = PBXGroup;
+			children = (
+				A1B7FA7726E15FD7004B7732 /* main.swift */,
+				A1B7FA8726E16347004B7732 /* NetworkDelayTime.swift */,
+				A1B7FA9426E21AB0004B7732 /* CheapestFlightsWithinKStops.swift */,
+				A1B7FAA126E22F7B004B7732 /* PathWithMinimumEffort.swift */,
+			);
+			path = ShortestPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +585,23 @@
 			productReference = A1B7FA3E26DF2716004B7732 /* MinimumCostFlow */;
 			productType = "com.apple.product-type.tool";
 		};
+		A1B7FA7426E15FD6004B7732 /* ShortestPath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B7FA7926E15FD7004B7732 /* Build configuration list for PBXNativeTarget "ShortestPath" */;
+			buildPhases = (
+				A1B7FA7126E15FD6004B7732 /* Sources */,
+				A1B7FA7226E15FD6004B7732 /* Frameworks */,
+				A1B7FA7326E15FD6004B7732 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortestPath;
+			productName = ShortestPath;
+			productReference = A1B7FA7526E15FD6004B7732 /* ShortestPath */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -586,6 +641,9 @@
 					A1B7FA3D26DF2716004B7732 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					A1B7FA7426E15FD6004B7732 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = A158570B26B197FA00BA8D3E /* Build configuration list for PBXProject "SwiftAlgorithm" */;
@@ -611,6 +669,7 @@
 				A1B7F9E826D6A0F6004B7732 /* TreeBasic */,
 				A1B7FA0526D92171004B7732 /* GreedyAlgorithm */,
 				A1B7FA3D26DF2716004B7732 /* MinimumCostFlow */,
+				A1B7FA7426E15FD6004B7732 /* ShortestPath */,
 			);
 		};
 /* End PBXProject section */
@@ -710,6 +769,17 @@
 			files = (
 				A1B7FA5C26DF2792004B7732 /* Pipe.swift in Sources */,
 				A1B7FA4126DF2716004B7732 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B7FA7126E15FD6004B7732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B7FA7826E15FD7004B7732 /* main.swift in Sources */,
+				A1B7FAA226E22F7B004B7732 /* PathWithMinimumEffort.swift in Sources */,
+				A1B7FA8826E16347004B7732 /* NetworkDelayTime.swift in Sources */,
+				A1B7FA9526E21AB0004B7732 /* CheapestFlightsWithinKStops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,6 +1081,24 @@
 			};
 			name = Release;
 		};
+		A1B7FA7A26E15FD7004B7732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1B7FA7B26E15FD7004B7732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1109,6 +1197,15 @@
 			buildConfigurations = (
 				A1B7FA4326DF2716004B7732 /* Debug */,
 				A1B7FA4426DF2716004B7732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B7FA7926E15FD7004B7732 /* Build configuration list for PBXNativeTarget "ShortestPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B7FA7A26E15FD7004B7732 /* Debug */,
+				A1B7FA7B26E15FD7004B7732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
