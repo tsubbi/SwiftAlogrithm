@@ -38,6 +38,7 @@
 		A1B7FA8826E16347004B7732 /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA8726E16347004B7732 /* NetworkDelayTime.swift */; };
 		A1B7FA9526E21AB0004B7732 /* CheapestFlightsWithinKStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FA9426E21AB0004B7732 /* CheapestFlightsWithinKStops.swift */; };
 		A1B7FAA226E22F7B004B7732 /* PathWithMinimumEffort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FAA126E22F7B004B7732 /* PathWithMinimumEffort.swift */; };
+		A1B7FAAF26E748E9004B7732 /* PathToMaximumProbability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B7FAAE26E748E9004B7732 /* PathToMaximumProbability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -185,6 +186,7 @@
 		A1B7FA8726E16347004B7732 /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
 		A1B7FA9426E21AB0004B7732 /* CheapestFlightsWithinKStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlightsWithinKStops.swift; sourceTree = "<group>"; };
 		A1B7FAA126E22F7B004B7732 /* PathWithMinimumEffort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathWithMinimumEffort.swift; sourceTree = "<group>"; };
+		A1B7FAAE26E748E9004B7732 /* PathToMaximumProbability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathToMaximumProbability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +410,7 @@
 				A1B7FA8726E16347004B7732 /* NetworkDelayTime.swift */,
 				A1B7FA9426E21AB0004B7732 /* CheapestFlightsWithinKStops.swift */,
 				A1B7FAA126E22F7B004B7732 /* PathWithMinimumEffort.swift */,
+				A1B7FAAE26E748E9004B7732 /* PathToMaximumProbability.swift */,
 			);
 			path = ShortestPath;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B7FA7826E15FD7004B7732 /* main.swift in Sources */,
+				A1B7FAAF26E748E9004B7732 /* PathToMaximumProbability.swift in Sources */,
 				A1B7FAA226E22F7B004B7732 /* PathWithMinimumEffort.swift in Sources */,
 				A1B7FA8826E16347004B7732 /* NetworkDelayTime.swift in Sources */,
 				A1B7FA9526E21AB0004B7732 /* CheapestFlightsWithinKStops.swift in Sources */,

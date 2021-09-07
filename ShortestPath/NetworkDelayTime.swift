@@ -12,26 +12,38 @@ import Foundation
 // times is a list of [from, to, cost]
 // return total cost
 func networkDelayTime(_ times: [[Int]], _ n: Int, _ k: Int) -> Int {
-    guard  times.count > 0 else { return -1 }
+    var result = 0
+    var edges: [Int: [(to: Int, distance: Int)]] = [:]
+    // to use n+1 to fit for the node number
+    var distances = Array<Int>(repeating: Int.max, count: n+1)
+    var queue = [k]
+    // starting node's distance is 0
+    distances[k] = 0
     
-    var visited = Array(repeating: false, count: n)
-    visited[k-1] = true
-    var map: [Int: [(to: Int, w: Int)]]
-    for time in times {
-        map[time[0], default: []].append((to: time[1], w: time[2]))
+    for edge in times {
+        edges[edge[0], default: []].append((edge[1], edge[2]))
     }
-    var minCost = Int.max
-    var queue: [(to: Int, totalCost: Int)] = []
-    for route in map[k]! {
-        queue.append((to: route.to, totalCost: route.w))
-    }
-
     
     while !queue.isEmpty {
-        let (to, cost) = queue.removeFirst()
-        
-        
+        let start = queue.removeFirst()
+        var visited: Set<Int> = []
+        for (to, weight) in edges[start, default: []] {
+            if distances[start] != Int.max &&
+                distances[start] + weight < distances[to] {
+                // add the current distance with the distance to next node
+                distances[to] = distances[start] + weight
+                // if we visited the node, skip
+                if visited.contains(to) { continue }
+                visited.insert(to)
+                queue.append(to)
+            }
+        }
     }
     
-
+    for i in 1...n {
+        // find the max number of the distance
+        result = max(result, distances[i])
+    }
+    
+    return result == Int.max ? -1 : result
 }
